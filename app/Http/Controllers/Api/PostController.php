@@ -8,9 +8,12 @@ use Illuminate\Http\Request;
 class PostController extends Controller
 {
     public function index(){
-        return response()->json([
-            "name"=>"Alessandro",
-            "surname"=>"Cappelli",
-        ]);
+        // return response()->json([
+        //     "name"=>"Alessandro",
+        //     "surname"=>"Cappelli",
+        // ]);
+
+        $post = Post::all();
+        return response()->json($posts);
     }
 }
