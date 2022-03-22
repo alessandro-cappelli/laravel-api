@@ -9,8 +9,8 @@ class PostController extends Controller
 {
     public function index(){
         return response()->json([
-            "name"=>"Alessandro";
-            "surname"=>"Cappelli";
+            "name"=>"Alessandro",
+            "surname"=>"Cappelli",
         ]);
     }
 }
